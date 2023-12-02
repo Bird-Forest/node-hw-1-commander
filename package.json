@@ -1,0 +1,23 @@
+{
+  "name": "hw-1-commander",
+  "version": "1.0.0",
+  "description": "1. npm init -y запускає package.json\r    Скрипти дозволяють запускати для виконання встановлені пакети. Використовуючи npm-скрипти, можна створювати цілі системи збирання проекту. Автоматизуємо запуск index.js. Для цього у файлі package.json в полі scripts додамо скрипт запуску start.\r    \"scripts\": {\r    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",\r    \"start\": \"node index.js\",\r    \"dev\": \"nodemon index.js\"\r    },\r 2. npm install cors express вствновлює необхідні пакети\r 3. якщо папка node_modul не зявилась потрібно додати npm install\r 4. npm install --save-dev nodemon встановлюємо пакет, який відслідковує зміни у файлі. Це пакет для розробки, тому встановлюється в package.json\r    \"devDependencies\": {\r    \"nodemon\": \"^3.0.1\"\r    }\r 5. !!!! після прописання скрипта при введені в терміналі \\***\\* npm start **\\*\\*\\*\\*\\*\\* запускається node index.js\r 6. **\\*** npm run dev **\\*** для запуска відслідковування змін\r    ctrl C вийти\r 7. npm i commander",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nanoid": "^3.3.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
